@@ -39,8 +39,10 @@
                                     </div>
                                     <div class="col-span-2">
                                         <div class="h-32 flex items-center">
-                                            <p class="font-sans text-4xl">200 <sub
-                                                    class="font-sans text-base font-medium">Users</sub></p>
+                                            @forelse($users as $row)
+                                            <p class="font-sans text-4xl">{{ $row->id }}<sub
+                                                class="font-sans text-base font-medium">Users</sub></p>
+                                            @endforelse
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +59,7 @@
                                     <div class="col-span-2">
                                         <div class="h-32 flex items-center">
                                             <p class="font-sans text-4xl">200 <sub
-                                                    class="font-sans text-base font-medium">Request Account</sub></p>
+                                                    class="font-sans text-base font-medium">Notes Message</sub></p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +76,7 @@
                                     <div class="col-span-2">
                                         <div class="h-32 flex items-center">
                                             <p class="font-sans text-4xl">200 <sub
-                                                    class="font-sans text-base font-medium">Create without Request</sub>
+                                                    class="font-sans text-base font-medium">Name Users</sub>
                                             </p>
                                         </div>
                                     </div>
